@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>شيت اليوم</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+  <div class="center">
+    <h2 id="day-title"></h2>
+    <form id="data-form">
+      <input type="text" placeholder="اسم العميل" id="clientName">
+      <input type="text" placeholder="رقم التليفون" id="phone">
+      <input type="text" placeholder="نوع العقار" id="type">
+      <input type="date" id="date">
+      <input type="time" id="time">
+      <input type="number" placeholder="سعر العقار" id="price">
+      <input type="number" placeholder="العمولة" id="commission">
+      <select id="status">
+        <option value="تم الشراء">تم الشراء</option>
+        <option value="لم يتم">لم يتم</option>
+      </select>
+      <button type="submit" class="btn">حفظ</button>
+    </form>
+    <div id="entries"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

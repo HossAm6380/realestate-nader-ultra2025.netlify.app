@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>اختيار اليوم</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+  <div class="center">
+    <h2>اختر يوم الأسبوع</h2>
+    <div class="days">
+      <button onclick="goToDay('Saturday')">السبت</button>
+      <button onclick="goToDay('Sunday')">الأحد</button>
+      <button onclick="goToDay('Monday')">الاثنين</button>
+      <button onclick="goToDay('Tuesday')">الثلاثاء</button>
+      <button onclick="goToDay('Wednesday')">الأربعاء</button>
+      <button onclick="goToDay('Thursday')">الخميس</button>
+    </div>
+  </div>
+  <script>
+    function goToDay(day) {
+      window.location.href = `sheet.html?day=${day}`;
+    }
+  </script>
+</body>
+</html>
