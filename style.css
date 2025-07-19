@@ -1,34 +1,41 @@
-body.bg {
-  background-image: url('https://i.imgur.com/6IujlYg.jpg');
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('skanska-bg.jpg');
   background-size: cover;
-  font-family: 'Arial', sans-serif;
-  color: white;
-  text-align: center;
+  background-position: center;
+  font-family: sans-serif;
   direction: rtl;
 }
 
-.center {
-  margin-top: 80px;
-  background: rgba(0,0,0,0.6);
+.login-container {
+  background: rgba(255, 255, 255, 0.85);
+  max-width: 300px;
+  margin: 100px auto;
   padding: 20px;
-  border-radius: 15px;
-  display: inline-block;
+  border-radius: 10px;
+  text-align: center;
 }
 
-.btn, button {
-  padding: 10px 20px;
-  margin: 10px;
-  background: #00bfa5;
-  border: none;
-  border-radius: 10px;
+input {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #1e90ff;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-input, select {
-  display: block;
-  margin: 10px auto;
-  padding: 8px;
-  border-radius: 5px;
-  width: 80%;
+.error {
+  color: red;
+  margin-top: 10px;
 }

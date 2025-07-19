@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>أيام الأسبوع</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>اختر يوم</h2>
+    <div id="days"></div>
+  </div>
+  <script>
+    const days = ["السبت", "الأحد", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس"];
+    const container = document.getElementById("days");
+
+    days.forEach(day => {
+      const btn = document.createElement("button");
+      btn.textContent = day;
+      btn.onclick = () => window.location.href = "edit.html?day=" + encodeURIComponent(day);
+      container.appendChild(btn);
+    });
+  </script>
+</body>
+</html>

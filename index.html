@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>مرحبا بك</title>
+  <title>Real Estate Login</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg">
-  <div class="center">
-    <h1>نظام إدارة العقارات</h1>
-    <a href="login.html" class="btn">تسجيل الدخول</a>
+<body>
+  <div class="login-container">
+    <h2>تسجيل الدخول</h2>
+    <input type="text" id="username" placeholder="اسم المستخدم">
+    <input type="password" id="password" placeholder="كلمة المرور">
+    <button onclick="login()">دخول</button>
+    <p id="error" class="error"></p>
   </div>
+  <script src="login.js"></script>
 </body>
 </html>
